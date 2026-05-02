@@ -21,7 +21,7 @@ const links = [
   >
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:py-4 lg:px-8">
       <RouterLink to="/" class="group flex items-center gap-2" @click="drawer = false">
-        <span class="font-serif text-xl tracking-tight text-brand md:text-2xl">María</span>
+        <span class="font-heading text-xl tracking-tight text-brand md:text-2xl">María</span>
         <span class="hidden rounded-full bg-surface px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-brand/80 sm:inline"
           >SMM</span
         >

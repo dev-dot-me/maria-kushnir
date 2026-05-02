@@ -17,11 +17,11 @@ function scrollToContacts() {
       <div class="space-y-8">
         <div>
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">Ідеї та матеріали</p>
-          <h2 class="mt-3 font-serif text-4xl text-brand md:text-5xl">Блог</h2>
+          <h2 class="mt-3 font-heading text-4xl text-brand md:text-5xl">Блог</h2>
         </div>
 
         <div class="space-y-5">
-          <h3 class="text-xl font-semibold leading-snug text-brand md:text-2xl">
+          <h3 class="font-heading text-xl font-semibold leading-snug text-brand md:text-2xl">
             Як AI може допомогти твоєму бізнесу
           </h3>
           <div class="space-y-4 text-sm leading-relaxed text-brand/75 md:text-base">

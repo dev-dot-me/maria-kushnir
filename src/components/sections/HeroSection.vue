@@ -35,9 +35,9 @@ function scrollToContacts() {
           </div>
 
           <div class="space-y-4">
-            <h1 class="max-w-xl text-balance text-3xl font-semibold leading-[1.08] tracking-tight text-brand md:text-4xl lg:text-[2.65rem]">
+            <h1 class="font-heading max-w-xl text-balance text-3xl font-semibold leading-[1.08] tracking-tight text-brand md:text-4xl lg:text-[2.65rem]">
               Перетворюю соцмережі на
-              <span class="bg-gradient-to-r from-brand to-brand/55 bg-clip-text font-serif text-transparent">
+              <span class="bg-gradient-to-r from-brand to-brand/55 bg-clip-text font-heading text-transparent">
                 інструмент продажів</span
               >
             </h1>

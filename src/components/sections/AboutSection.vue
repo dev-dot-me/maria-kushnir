@@ -34,7 +34,7 @@ function scrollToContacts() {
       <div class="space-y-8">
         <div class="space-y-4">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">Про мене</p>
-          <h2 class="font-serif text-3xl text-brand md:text-4xl">Марія · SMM Lead</h2>
+          <h2 class="font-heading text-3xl text-brand md:text-4xl">Марія · SMM Lead</h2>
         </div>
 
         <div class="space-y-5 text-base leading-relaxed text-brand/75 md:text-lg">

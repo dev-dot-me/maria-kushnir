@@ -1,8 +1,30 @@
 @import 'tailwindcss';
 
+/*
+ * Cy Grotesk Grand — самохостинг. Покладіть woff2 у src/assets/fonts/
+ * (ліцензія на web за вашою угодою з постачальником шрифту).
+ * Шляхи обробляє Vite → коректний base для GitHub Pages.
+ * Якщо файлів немає — використовується fallback у --font-heading.
+ */
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/cy-grotesk-grand.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/fonts/cy-grotesk-grand-bold.woff2') format('woff2');
+}
+
 @theme {
-  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
+  --font-sans: 'Montserrat Variable', Montserrat, ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Cy Grotesk Grand', 'Montserrat Variable', Montserrat, ui-sans-serif, sans-serif;
   --color-brand: #0e2034;
   --color-surface: #f1f1f1;
 }

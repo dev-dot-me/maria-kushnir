@@ -9,7 +9,7 @@ import caseAlt from '../../assets/case2.png'
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Портфоліо</p>
-            <h2 class="mt-2 font-serif text-3xl md:text-4xl">Мої роботи</h2>
+            <h2 class="mt-2 font-heading text-3xl md:text-4xl">Мої роботи</h2>
           </div>
           <RouterLink
             to="/cases"
@@ -34,7 +34,7 @@ import caseAlt from '../../assets/case2.png'
 
           <!-- Case 2 -->
           <article class="relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 text-brand shadow-inner ring-1 ring-black/[0.06]">
-            <span class="font-serif text-5xl text-brand/15">02</span>
+            <span class="font-heading text-5xl text-brand/15">02</span>
             <div class="space-y-1">
               <h3 class="text-lg font-bold uppercase tracking-wide">Тури в Африку</h3>
               <p class="text-sm font-medium text-brand/65">ОАЕ · Туризм</p>
@@ -44,7 +44,7 @@ import caseAlt from '../../assets/case2.png'
 
           <!-- Case 3 -->
           <article class="relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 text-brand shadow-inner ring-1 ring-black/[0.06]">
-            <span class="font-serif text-5xl text-brand/15">03</span>
+            <span class="font-heading text-5xl text-brand/15">03</span>
             <div class="space-y-1">
               <h3 class="text-lg font-bold uppercase tracking-wide">Стоматологія</h3>
               <p class="text-sm font-medium text-brand/65">Україна · Медицина</p>

@@ -63,7 +63,7 @@ const deliverables = [
             Кейс №1 · Виробництво
           </div>
           <div class="space-y-3">
-            <h1 class="font-serif text-4xl leading-tight text-brand md:text-5xl">
+            <h1 class="font-heading text-4xl leading-tight text-brand md:text-5xl">
               Виробник бруківки для подвірʼя
             </h1>
             <p class="text-base font-medium leading-relaxed text-brand/70 md:text-lg">
@@ -90,7 +90,7 @@ const deliverables = [
 
         <div class="space-y-6 rounded-[1.75rem] border border-black/[0.06] bg-white p-8 shadow-[0_22px_70px_-48px_rgba(14,32,52,0.55)]">
           <div class="flex items-center justify-between gap-4">
-            <h2 class="font-serif text-2xl text-brand md:text-3xl">Що було зроблено</h2>
+            <h2 class="font-heading text-2xl text-brand md:text-3xl">Що було зроблено</h2>
             <span class="hidden rounded-full bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-brand/55 md:inline-flex">
               Фокус на системність
             </span>
@@ -114,7 +114,7 @@ const deliverables = [
         <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div class="space-y-3">
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Далі</p>
-            <p class="font-serif text-2xl md:text-3xl">Готові обговорити подібний кейс для вашої ніші?</p>
+            <p class="font-heading text-2xl md:text-3xl">Готові обговорити подібний кейс для вашої ніші?</p>
             <p class="max-w-xl text-sm leading-relaxed text-white/75">
               Залиште контакт у футері або напряму в соцмережах — повернусь із першими гіпотезами та форматами співпраці.
             </p>

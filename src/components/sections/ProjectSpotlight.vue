@@ -28,7 +28,7 @@ const task =
       <div class="space-y-6">
         <div class="space-y-3">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">Обраний проєкт</p>
-          <h2 class="font-serif text-3xl leading-tight text-brand md:text-4xl">
+          <h2 class="font-heading text-3xl leading-tight text-brand md:text-4xl">
             Виробник бруківки для подвірʼя
           </h2>
           <p class="text-sm font-medium leading-relaxed text-brand/70 md:text-base">

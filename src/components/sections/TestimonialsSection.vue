@@ -28,7 +28,7 @@ const items = [
   <section id="reviews" class="scroll-mt-24 px-4 py-16 lg:px-8 lg:py-24">
     <div class="mx-auto max-w-6xl space-y-10">
       <div class="text-center">
-        <h2 class="font-serif text-3xl tracking-wide text-brand md:text-[2.35rem]">Відгуки</h2>
+        <h2 class="font-heading text-3xl tracking-wide text-brand md:text-[2.35rem]">Відгуки</h2>
         <p class="mt-3 text-sm text-brand/55">Реальні історії людей, які пройшли навчання й робочі процеси у подібному темпі та стандарті якості.</p>
       </div>
 

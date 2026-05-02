@@ -44,7 +44,7 @@ const steps = [
     <div class="mx-auto max-w-6xl space-y-12">
       <div class="mx-auto max-w-2xl text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">Прозорий процес</p>
-        <h2 class="mt-3 font-serif text-3xl text-brand md:text-4xl">Як я працюю</h2>
+        <h2 class="mt-3 font-heading text-3xl text-brand md:text-4xl">Як я працюю</h2>
         <p class="mt-4 text-sm leading-relaxed text-brand/65 md:text-base">
           Шість порцій спокою для вашої команди: від першого брифу до масштабування результатів без хаосу в комунікації.
         </p>

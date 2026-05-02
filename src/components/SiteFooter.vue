@@ -6,7 +6,7 @@ const year = new Date().getFullYear()
   <footer id="contacts" class="border-t border-black/10 bg-brand text-white">
     <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-8">
       <div class="space-y-4">
-        <p class="font-serif text-3xl md:text-4xl">Почнімо з розмови</p>
+        <p class="font-heading text-3xl md:text-4xl">Почнімо з розмови</p>
         <p class="max-w-md text-sm leading-relaxed text-white/75">
           Розкажіть про свій бізнес і цілі — підберемо формат співпраці та наступні кроки без зайвого формалізму.
         </p>
