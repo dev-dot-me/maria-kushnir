@@ -1,7 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+/** GitHub Pages + relative Vite base: історія має префікс /REPO/, асети — відносні ./… */
+function resolveHistoryBase() {
+  const base = import.meta.env.BASE_URL
+  if (!base.startsWith('.')) {
+    return base.endsWith('/') ? base : `${base}/`
+  }
+  const raw = typeof window !== 'undefined' ? window.location.pathname : '/'
+  const seg = raw.replace(/\/$/, '').split('/').filter(Boolean)
+  const repoRoot = seg.length ? `/${seg[0]}/` : '/'
+  return repoRoot
+}
+
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(resolveHistoryBase()),
   scrollBehavior(to, _from, saved) {
     if (saved) return saved
     if (to.hash) {

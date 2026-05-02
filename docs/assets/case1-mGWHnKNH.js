@@ -1,1 +1,0 @@
-var e=`/masha-portfolio/assets/case1-C_NcrxSc.png`;export{e as t};

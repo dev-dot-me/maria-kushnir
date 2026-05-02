@@ -7,8 +7,11 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  // Локально "/" ; збірка під GitHub Pages: https://dev-dot-me.github.io/masha-portfolio/
-  base: command === 'serve' ? '/' : '/masha-portfolio/',
+  /*
+   * GitHub Pages project site: https://USER.github.io/REPO_NAME/
+   * Відносний base щоб асети працювали після перейменування репо (не прив’язуємось до старої назви в шляхах).
+   */
+  base: command === 'serve' ? '/' : './',
   plugins: [
     vue(),
     tailwindcss(),
