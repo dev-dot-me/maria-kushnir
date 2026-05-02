@@ -45,14 +45,7 @@ const links = [
         </RouterLink>
       </nav>
 
-      <div class="flex items-center gap-2 lg:hidden">
-        <RouterLink
-          to="/cases"
-          class="rounded-full bg-brand px-3 py-2 text-xs font-semibold text-white"
-          @click="drawer = false"
-        >
-          Кейси
-        </RouterLink>
+      <div class="flex items-center lg:hidden">
         <button
           type="button"
           class="flex h-10 w-10 items-center justify-center rounded-full border border-brand/10 bg-white text-brand shadow-sm"
@@ -66,25 +59,51 @@ const links = [
       </div>
     </div>
 
-    <el-drawer v-model="drawer" direction="rtl" size="min(100%, 320px)" title="Навігація">
-      <div class="flex flex-col gap-1 pt-2">
-        <RouterLink
-          v-for="item in links"
-          :key="item.hash"
-          :to="{ path: '/', hash: item.hash }"
-          class="rounded-xl px-3 py-3 text-base font-medium text-brand hover:bg-surface"
-          @click="drawer = false"
-        >
-          {{ item.label }}
-        </RouterLink>
-        <RouterLink
-          to="/cases"
-          class="mt-4 rounded-xl bg-brand px-3 py-3 text-center font-semibold text-white"
-          @click="drawer = false"
-        >
-          Сторінка кейсів
-        </RouterLink>
+    <el-drawer
+      v-model="drawer"
+      direction="rtl"
+      size="min(100%, 320px)"
+      :with-header="false"
+      append-to-body
+      class="mobile-nav-drawer"
+    >
+      <div
+        class="flex h-full min-h-0 flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1rem,env(safe-area-inset-top))]"
+      >
+        <div class="mb-6 flex shrink-0 items-center justify-between gap-3">
+          <span class="text-lg font-semibold leading-normal text-brand">Навігація</span>
+          <button
+            type="button"
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand/15 bg-surface text-brand transition hover:bg-brand/5"
+            aria-label="Закрити меню"
+            @click="drawer = false"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto">
+          <RouterLink
+            v-for="item in links"
+            :key="item.hash"
+            :to="{ path: '/', hash: item.hash }"
+            class="rounded-xl px-3 py-3 text-base font-medium leading-snug text-brand hover:bg-surface"
+            @click="drawer = false"
+          >
+            {{ item.label }}
+          </RouterLink>
+        </nav>
       </div>
     </el-drawer>
   </header>
 </template>
+
+<style scoped>
+/* Прибираємо дефолтні відступи Element Plus, щоб самі керувати safe-area й не обрізати текст */
+.mobile-nav-drawer :deep(.el-drawer__body) {
+  padding: 0;
+  overflow-x: hidden;
+}
+</style>
